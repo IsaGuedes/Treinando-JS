@@ -1,0 +1,43 @@
+<script>
+    var escolha = prompt('escolha 1 para primeiro grau, e 2 para segundo grau.')
+    if (escolha=="1") {
+     var a = prompt('Digite A')
+    var b = prompt("Digite B")
+    var i = prompt("Digite a igualdade")
+    var result = (i-b)/a
+    alert (result)
+    }
+    else if (escolha=="2") {
+        var a = (parseInt (prompt("digite A")))
+        var b = (parseInt (prompt("digite B")))
+        var c = (parseInt (prompt("digite C")))
+        var ig = (parseInt (prompt("digite igualdade")))
+        if (ig!=0){
+            var cig = c-ig
+            var delta = (b*b) - (4*a*cig)
+            var rdelta = Math.sqrt(delta)
+             if (delta<0) {
+                alert ("Os numeros digitados geraram valores indefinidos")
+             }
+            else { 
+            var x1 = (-b + rdelta)/(a*2)
+            var x2 = (-b - rdelta)/(a*2)
+            alert(` x1 é ${x1} e x2 é ${x2}`)
+        }
+        }
+        else if (ig==0){
+            var delta = (b*b) - (4*a*c)
+            var rdelta = Math.sqrt(delta)
+            if (delta<0) {
+                alert("Os numeros digitados geraram valores indefinidosl")
+             }
+             else if (delta>=0) {
+                var x1 = (-b + rdelta)/(a*2)
+                var x2 = (-b - rdelta)/(a*2)
+                alert(` x1 é ${x1} e x2 é ${x2}`)
+             }
+            
+        }
+
+    }
+</script>

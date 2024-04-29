@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>avaliação Q2</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <script>
+    
+    var n1=parseInt(prompt("Digite o número que deseja saber a raiz")); //número que o usuario deseja ver a raiz
+    var raiz = Math.sqrt(n1) //para descobrir a raiz do numero
+    var arredonda = Math.round(raiz)//para arredondar a raiz para o numero inteiro mais proximo
+        if (Number.isInteger(raiz)==true) { //se a raiz do numero é inteiro:
+            alert(raiz);//aparece a raiz
+        }
+        else if (Number.isInteger(raiz)==false) { //se o numero não é inteiro:
+            alert(`Não a raiz exata, mas a raiz aproximada é ${arredonda}` ); //aparece que a raiz não é exata e arredonda ela
+        }
+      
+    </script>
+</body>
+</html>
